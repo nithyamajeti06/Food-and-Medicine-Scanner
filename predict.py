@@ -4,7 +4,7 @@ import numpy as np
 import pyttsx3  # Text-to-Speech
 from PIL import Image
 
-# Adding the model from google teachable machine
+# Adding the model
 model = tf.keras.models.load_model("food_model.h5")
 
 # Creating a dictionary for the class names
