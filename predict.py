@@ -57,7 +57,3 @@ def predict(image_path):
 
     # Return the predicted item name
     return item_name
-
-
-#image_path = "s-l1200.jpg"  # Replace with user-uploaded image
-#predict(image_path)
