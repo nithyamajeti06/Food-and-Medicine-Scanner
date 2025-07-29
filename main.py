@@ -64,6 +64,10 @@ def open_camera_screen():
 def close_app():
     root.destroy()
 
+# Function to know more
+def more_info():
+    info = predict.know_more(prediction_result)
+
 # Initialize main window
 root = tk.Tk()
 root.title("Camera")
@@ -93,6 +97,7 @@ output_label = tk.Label(output_frame, text="", font=(myFont, 20, 'bold'))
 output_label.pack(pady=20)
 tk.Button(output_frame, text="Back to home", command=go_home, font=(myFont, 30, 'bold'), bg="green", fg="white", padx=30, pady=15, relief=tk.RAISED, borderwidth=4).pack()
 tk.Button(output_frame, text="Close screen", command=close_app, font=(myFont, 20, "bold"), bg="black", fg="white", padx=10, pady=5, relief=tk.RAISED, borderwidth=3).pack(pady=10)
+tk.Button(output_frame, text="More info", command=more_info, font=(myFont, 20, "bold"), bg ="black", fg="white", padx=10,pady=5, relief=tk.RAISED, borderwidth=3).pack(pady=10)
 
 # Run the application
 root.mainloop()
